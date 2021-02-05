@@ -30,9 +30,9 @@ public class CodeDOM {
     /**
      * 数据连接相关
      */
-    private static final String URL = "jdbc:mysql://localhost:3306/test?serverTimezone=GMT%2B8&characterEncoding=utf-8";
+    private static final String URL = "jdbc:mysql://192.168.101.165:3306/test?serverTimezone=GMT%2B8&characterEncoding=utf-8";
     private static final String USERNAME = "root";
-    private static final String PASSWORD = "123456";
+    private static final String PASSWORD = "5601564a";
     private static final String DRIVER_CLASSNAME = "com.mysql.jdbc.Driver";
     /**
      * 表名
@@ -528,11 +528,11 @@ public class CodeDOM {
         return tableName + " 后台代码生成完毕！";
     }
 
-//    public static void main(String[] args) {
-//        String[] tables = {"sys_user","sys_menu","sys_authority","sys_user_menu","sys_user_authority","sys_shortcut_menu","sys_setting"};
-//        for (String table : tables) {
-//            String msg = new CodeDOM(table).create();
-//            System.out.println(msg);
-//        }
-//    }
+   /* public static void main(String[] args) {
+        String[] tables = {"sys_user","sys_menu","sys_authority","sys_user_menu","sys_user_authority","sys_shortcut_menu","sys_setting"};
+        for (String table : tables) {
+            String msg = new CodeDOM(table).create();
+            System.out.println(msg);
+        }
+    }*/
 }
